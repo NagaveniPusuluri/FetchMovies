@@ -48,7 +48,7 @@ const Main=()=>{
             arr.map((value)=>{
               return(
                 <li>
-                  <a href="#" name={value} onClick={(e)=>{getData(e.target.name)}}>
+                  <a href="#App" name={value} onClick={(e)=>{getData(e.target.name)}}>
                     {value}
                   </a>
                 </li>
