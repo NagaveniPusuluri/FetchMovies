@@ -33,7 +33,7 @@ const Main=()=>{
     setUrl(url);
   }
   const searchMovie=(e)=>{
-    if(e.key=="Enter"){
+    if(e.key==="Enter"){
       url=base_url+"/search/movie?api_key=38b4b5c13f26f82cb8be60fa5eb2f13f&query="+search;
       setUrl(url);
       setSearch(" ");
@@ -70,7 +70,7 @@ const Main=()=>{
     </div>
      <div className="container">
         {
-          (movieData.length==0)?
+          (movieData.length===0)?
           <p className='notfound'>Not Found</p>:
           movieData.map((response,pos)=>{
             return(
